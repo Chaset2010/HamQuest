@@ -1,0 +1,14 @@
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\obj\Debug\HamQuest.csprojAssemblyReference.cache
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\obj\Debug\HamQuest.csproj.CoreCompileInputs.cache
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\bin\Debug\terminal8x8.png
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\bin\Debug\HamQuest.exe.config
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\bin\Debug\HamQuest.exe
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\bin\Debug\HamQuest.pdb
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\bin\Debug\OpenTK.dll
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\bin\Debug\RLNET.dll
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\bin\Debug\RogueSharp.dll
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\bin\Debug\OpenTK.xml
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\bin\Debug\OpenTK.dll.config
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\obj\Debug\HamQuest.csproj.CopyComplete
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\obj\Debug\HamQuest.exe
+C:\Users\Jamie\source\repos\HamQuest\HamQuest\obj\Debug\HamQuest.pdb
