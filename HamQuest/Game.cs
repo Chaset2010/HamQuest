@@ -4,10 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HamQuest.Core;
+using HamQuest.Systems;
 using RLNET;
 
 namespace HamQuest {
     public class Game {
+
+        public static DungeonMap DungeonMap { get; private set; }
+        public static Player Player { get; private set; }
+
         private static readonly int _screenWidth = 100;
         private static readonly int _screenHeight = 70;
         private static RLRootConsole _rootConsole;
@@ -27,6 +32,7 @@ namespace HamQuest {
         private static readonly int _inventoryWidth = 80;
         private static readonly int _inventoryHeight = 11;
         private static RLConsole _inventoryConsole;
+
         public static void Main() {
             string fontFileName = "terminal8x8.png";
             string consoleTitle = "RogueSharp V3 Tutorial - Level 1";
@@ -41,12 +47,20 @@ namespace HamQuest {
             _rootConsole.Update += OnRootConsoleUpdate;
 
             _rootConsole.Render += OnRootConsoleRender;
+
+            Player = new Player();
+
+            MapGenerator mapGenerator = new MapGenerator(_mapWidth, _mapHeight);
+            DungeonMap = mapGenerator.CreateMap();
+
+            DungeonMap.UpdatePlayerFieldOfView();
+
             _rootConsole.Run();
         }
 
         private static void OnRootConsoleUpdate(object sender, UpdateEventArgs e) {
             _mapConsole.SetBackColor(0, 0, _mapWidth, _mapHeight, Color.FloorBackground);
-            _mapConsole.Print(1, 1, "Map", Color.TextHeading);
+            _mapConsole.Print(1, 1, "", Color.TextHeading);
 
             _messageConsole.SetBackColor(0, 0, _messageWidth, _messageHeight, Pallette.DbDeepWater);
             _messageConsole.Print(1, 1, "Messages", Color.TextHeading);
@@ -69,6 +83,9 @@ namespace HamQuest {
                 0, 0);
 
             _rootConsole.Draw();
+
+            DungeonMap.Draw(_mapConsole);
+            Player.Draw(_mapConsole, DungeonMap);
         }
     }
 }

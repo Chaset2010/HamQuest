@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RLNET;
 namespace HamQuest.Core {
-    class Color {
+    public class Color {
         public static RLColor FloorBackground = RLColor.Black;
         public static RLColor Floor = Pallette.AlternateDarkest;
         public static RLColor FloorBackgroundFov = Pallette.DbDark;
@@ -17,5 +17,6 @@ namespace HamQuest.Core {
         public static RLColor WallFov = Pallette.SecondaryLighter;
 
         public static RLColor TextHeading = Pallette.DbLight;
+        public static RLColor Player = Pallette.DbLight;
     }
 }

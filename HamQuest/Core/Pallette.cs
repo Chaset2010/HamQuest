@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using RLNET;
 
 namespace HamQuest.Core {
-    class Pallette {
+    public class Pallette {
         public static RLColor PrimaryLightest = new RLColor(110, 121, 119);
         public static RLColor PrimaryLighter = new RLColor(88, 100, 98);
         public static RLColor Primary = new RLColor(68, 82, 79);
